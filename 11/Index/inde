@@ -1,0 +1,55 @@
+h2{
+ font-size: 9rem;
+ position: absolute;
+}
+.border{
+  color: black;
+  text-shadow: 
+  -1px -1px 0 white,
+  1px -1px 0 white,
+  1px 1px 0 white,
+  -1px 1px 0 white
+}
+.wave{
+  color: brown;
+  animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave{
+  0%, 100%{
+    clip-path: polygon(
+      0% 47%,
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+}
+
+
+<h2  class="border">TE AMO</h2> 
+         <h2  class="wave">TE AMO</h2> 
+
+
+
+         style="font-size: 100px;"
